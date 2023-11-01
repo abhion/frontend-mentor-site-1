@@ -1,5 +1,6 @@
 // vite.config.js
 import { defineConfig } from 'vite';
+import tailwindcss from "tailwindcss"
 
 export default defineConfig({
   build: {
@@ -8,7 +9,7 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: [
-        require('tailwindcss'),
+        tailwindcss,
       ],
     },
   },
